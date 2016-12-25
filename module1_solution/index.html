@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='LunchCheck'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>body {font size:1.2em; }</style>
+    <title>LunchCheck</title>
+  </head>
+  <body >
+  <h2>LunchCheck</h2>
+
+  <div ng-controller="LunchCheckController">
+    <div>
+       Lunch Menu : <input type="text" ng-model="item" ng-keyup="itemList();">
+      </div>
+      <br></br>
+      <div>Order Entered is :{{item}}</div>
+      <br></br>
+      <div>Total Number of Items Entered:
+        {{totalItemCount}}</div>
+        <br></br>
+<div>
+  <button ng-click = "CheckIfTooMuch()">CheckIfTooMuch</button>
+  <br></br>
+  <h3><br>{{sayMessage()}}</br><h3>
+</div>
+</div>
+  </body>
+</html>
