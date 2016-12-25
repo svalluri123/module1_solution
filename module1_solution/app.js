@@ -24,17 +24,17 @@ function LunchCheckController($scope) {
 $scope.CheckIfTooMuch= function(){
   if($scope.totalItemCount===0){
   $scope.sayMessage=function(){
-     return "Please Enter the order !!";
+     return "Please Enter the order!!";
    }
   }
   else if($scope.totalItemCount>0&&$scope.totalItemCount<=3){
     $scope.sayMessage=function(){
-       return "Enjoy !!";
+       return "Enjoy!!";
      }
   }
   else if ($scope.totalItemCount>3) {
     $scope.sayMessage=function(){
-       return "Too Much !!";
+       return "Too Much!!";
      }
   }
  }
