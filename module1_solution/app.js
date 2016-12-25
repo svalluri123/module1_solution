@@ -17,12 +17,8 @@ function LunchCheckController($scope) {
     $scope.totalItemCount=totalItems;
   }
   function itemCount(string){
-  var stringCount=0;  
   var stringArray = (string).split(',');
-   for (var i=0;i<stringArray.length;i++){
-     stringCount = stringCount+1;
-   }
-  return stringCount;
+  return stringArray.length;
  }
 
 $scope.CheckIfTooMuch= function(){
